@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.main{
+    position: relative;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.nav-bar{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 13vh;
+
+}
+.nav-links{
+    font-family: sans-serif;
+}
+.nav-links,
+.logo,.link,.logo p{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    flex: 1;
+}
+.logo p{
+    color: white;
+    justify-content: center;
+    width: 200px;
+    background-color: #BF7432;
+}
+.link{
+    position: relative;
+    padding: 0 30px 0 30px;
+    color:#658925;
+    font-size: 0.9rem;
+}
+.link::after{
+    position: absolute;
+    top:-3px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:#BF7432;
+    transition: top 0.3s ease-out;
+}
+.link:hover.link::after{
+    top:0px;
+}
+.landing-page{
+    display: flex;
+    width: 90%;
+    height: 65%;
+    margin: 0 0 0 auto;
+    align-items: center;
+}
+.content{
+    flex: 1;
+}
+.content h3{
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#386034,rgb(56,96,52,0.62));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content p{
+    color:hsl(82, 57%, 34%);
+    width: 70%;
+    font-size: 0.9rem;
+    padding-bottom: 30px;
+}
+.image{
+    flex: 2;
+}
+.cta{
+    padding: 14px 45px;
+    background-color: #BF7432;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    box-shadow: -3px 10px 35px rgb(0,0,0,0.25);
+    transition: box-shadow 0.25s ease-out;
+}
+.cta:hover{
+    box-shadow: -3px 13px 23px rgb(0,0,0,0.25);
+}
+.image img{
+    width: 100%;
+}
+.move-dwn{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #BF7432;
+    opacity: 0.9;
+    right: 0px;
+    bottom: 0px;
+}
+.arrow{
+    width: 20%;
+}
+.move-dwn:hover{
+    opacity: 1;
+}
